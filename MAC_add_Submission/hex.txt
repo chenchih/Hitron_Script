@@ -1,0 +1,51 @@
+Add one to hex(or mac address) and remove L
+
+==============Set by command line====================
+
+Python 2.7.13 (v2.7.13:a06454b1afa1, Dec 17 2016, 20:42:59) [MSC v.1500
+Type "help", "copyright", "credits" or "license" for more information.
+>>> f = "0x12345678910"
+>>> value = int(f,16)
+>>> value +=1
+>>> print (hex(value))
+0x12345678911L
+>>> hex(value).rstrip("L").lstrip("0x") or "0"
+'12345678911'
+>>>
+>>> print (hex(value))
+0x12345678911L
+>>> hex(value).rstrip("L")
+'0x12345678911'
+
+
+----------------------------------------Print 10 hex-------------------
+varhex = "0x000FFF" # starting hex value
+for i in range(0, 10):      # how many times you want to increment
+    i = int(varhex, 16)     # define i as the decimal equivalent of varhex
+    i +=1                   # increment i by one
+    print (hex(i))          # print out the incremented value, but in hex form
+    varhex = hex(i)         # increment varhex by 1
+
+
+
+
+Output:
+0x1000
+0x1001
+0x1002
+0x1003
+0x1004
+0x1005
+0x1006
+0x1007
+0x1008
+0x1009
+resource:https://stackoverflow.com/questions/23396711/how-to-do-a-hexadecimal-increment
+
+
+-----other resource----------------------
+16 base remove L in end and 0x in beginner, L is long:
+https://stackoverflow.com/questions/10218164/how-to-convert-an-integer-to-hexadecimal-without-the-extra-0x-leading-and-l
+
+How to use hex() without 0x in Python?
+https://stackoverflow.com/questions/16414559/how-to-use-hex-without-0x-in-python
