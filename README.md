@@ -1,6 +1,6 @@
 # Hitron_Script
 
-* This is script that can do some automated work. There are many diffrent folder . 
+* This is a script that can do some automated work. There are many diffrent folder . 
 * This script are based on work, which related to file, and some networking stuff
 
 ## Getting Started
@@ -15,7 +15,16 @@
 Give examples
 ```
 ## Folder /directory
-* Python(2/3): put based on python script
+* Python(2/3): put based on python script 
+  * MAC_add_Submission:
+     * OK_code: some test code when writting this scipt
+    * Description: adding mac address last digit to 1. EX: XXXXXXXXX0=>xxxxxxxxx1. If you have 100 mac, it will automatic add 1 or two to it.
+    * Main Scipt:MAC_add1+2.py,MAC_add1.py, and MAC_add12.py
+    
+  * inputcharacter
+  * find_string
+  * dateutil
+
 * CL: based on TCL script
 
 
