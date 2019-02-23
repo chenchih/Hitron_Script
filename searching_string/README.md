@@ -6,12 +6,12 @@
 * The text file contain date with password
 ## Getting Started
 
-* This Scipt based on python, bat, bash, TCL. 
+* This Scipt based on python2 and 3. 
 
-### How to work with the script:
-1) execute the script
-2)Script will let you enter which string to find
-3)please refer below output
+## How to work with the script:
+1) Execute the script <br/>
+2) Script will let you enter which string to find<br/>
+3) Please refer below output
 
 ```
 enter your string (Ex:20180810): 20180810
@@ -20,6 +20,6 @@ enter your string (Ex:20180810): 20180810
 ## File description
 * Text_search_py2.py=>this script help search string in a file (support python2) 
 * Text_search_py3.py=>this script help search string in a file (support python3) 
-* specific_date_find.py=>Enter the string you wants to find in the script. 
+* specific_date_find.py=>Enter the string you wants to find in the script. (python2 &python3)
 * find_method.py=>same as above, this is a sample format. File from internet for reference
 * POD_RDKB_10Year.txt: contain list of password, that script will find
