@@ -1,0 +1,43 @@
+===============split============
+0)import date fucntion
+from datetime import datetime
+1) declare varaible 
+string = "2018/01/02" "  " "CCCC"
+print string
+#'2018/01/02  CCCC'
+2) split into two element
+string.rstrip().split('  ')
+#['2018/01/02', 'CCCC']
+print string
+#2018/01/02  CCCC
+3) declare varable to element 0 and 1
+>>> element0=string.split()[0]
+>>> element1=string.split()[1]
+print element0
+#2018/01/02
+print element1
+#CCCC
+
+4) convert date format
+date_convert =(datetime.strftime(datetime.strptime(element0, '%Y/%m/%d'), '%Y%m%d'))
+print date_convert 
+#20180102
+5) add two element together
+new = date_convert +" " +element1
+print new
+#'20180102 CCCC'
+
+
+=============Join:=====================
+>>> a = "this is a string"
+>>> a = a.split(" ") # a is converted to a list of strings. 
+>>> print a
+['this', 'is', 'a', 'string']
+Joining a string is simple:
+
+>>> a = "-".join(a)
+>>> print a
+this-is-a-string 
+
+regerence:
+https://www.hackerrank.com/challenges/python-string-split-and-join/problem

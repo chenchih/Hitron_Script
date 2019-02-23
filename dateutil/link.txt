@@ -1,0 +1,19 @@
+1. date_replace.py
+Description: "used replace command"
+hoilday.txt will conatain:
+2018/01/02 XXXX
+
+it will remove the / and changed to 20180102
+and write as a file 
+
+2.strftime_dateonly.py
+Description: This can not used word with date. Only can used date to replace
+Hoilday can only put date 2018/01/02, no word 
+
+3.strftime_date_string.py
+Description: FIX strftime_dateonly.py issue on string and date
+This code can convert the date abnd word together. 
+I just split into two element and conver the first element.
+
+ 
+
