@@ -15,7 +15,7 @@
 * MAC_add1+2.py ==>add 1&2 to it
 * OK_code ==> is a directory that i used to write some sample experience test. You can refer PDF file for more description
 
-###What is the purpose for this
+### What is the purpose for this
 * Many Product have MAC Address, but some product will have more than one interface, and which will provide another MAC address. 
 * Most time the MAC address of different interface will add one or two to it.EXample: router:1234567890, and mta interfsce: 1234567891. 
 * Most of mac will be in HEX, so if we have many MAC it wil lbe difficult to add manual. 
