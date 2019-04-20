@@ -24,7 +24,23 @@ Give examples
   * inputcharacter
   * find_string
   * dateutil
-  * Description: Convert data time 
+  
+    * Description: Convert data time.
+      * holiday.txt:contain data 
+      * date_replace.py:it will remove the / and changed to 20180102
+      * strftime_dateonly.py:convert date only without word 
+      * strftime_date_string.py:convert the date abnd word together
+     * How to used with output.
+       * show_Date.py
+          * Description on how to used: Just type in the date format run script (EG: Mon Feb 15 2010->convert to 15//02//2010)
+       * date_replace.py
+          * Description on how to used: used Hoilday.txt and contain 2018/01/02, and remove / (date with word).
+       * strftime_dateonly.py
+          * Description on how to used: used Hoilday.txt and contain 2018/01/02, and remove / (only date).
+       * strftime_date_string.py
+          * Description on how to used: used Hoilday.txt (date contain with no /) will convert date with /, and word.     
+         
+     
 
 * CL: based on TCL script
 
