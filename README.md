@@ -257,9 +257,18 @@ Give examples
        * input related script
          * Telnet_Ex1_no_type_acc.py: Put your host, account and password in script
          * Telnet_Ex2_type_acc.py: User type in account, and pwd , and enter command (show running config)
-         * Telnet_Ex2_type_acc.py:Telnet with function
-         * Telnet_Ex2_type_acc.py:Put your password setting and username in inc
-
+         * Telnet_Ex3_using_function:Telnet with function
+         * telnet.py,toPi.py, and config.ini: telnet using ini config file
+         
+    * How to used with output.
+       * telnet.py,toPi.py, and config.ini
+          * Description on how to used: This is script using ini method, which contain 3 files.
+          * File:
+            * Config.ini: contain remote related information
+            * telnet.py: start telnet action
+            * toPi.py: main script 
+ 
+  
 ## Resource
 
 Updated later
