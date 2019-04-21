@@ -5,14 +5,19 @@
 
 ## Getting Started
 
-* This Scipt based on python, bat, bash, TCL. 
+* This Scipt based on Python which I made automatic foro Hitron related work, which can help me speed up my working process.  Most of theme are related to file, ip, mib related setting
 
 ### Prerequisites
------Updated later-----
+- Please install python2 or 3.
+- Support Python2 :MAC_add_Submission, Telnet_using ini file 
+
+
 
 
 ```
-Give examples
+Updated Time:
+2019/02: inital setting
+2019/04/21 updated all related information and readme data
 ```
 
 ## Folder /directory
@@ -20,10 +25,12 @@ Give examples
 ---
   * file_rw:
     * Description: 
+      * python 3
       * This script mainly focus on how to read and write file. The most basic concept of how to used it. 
       * simple_read_write.py: read file, and export to text file
       * average_file_data.py: average the text file data
       * simple_read.py: read file, and print it out
+    
       
 ```
      Method 1: line.strip()
@@ -60,6 +67,7 @@ Give examples
 
   * MAC_add_Submission:
     * Description: 
+      * Version: python 2 
       * adding mac address last digit to 1. EX: XXXXXXXXX0=>xxxxxxxxx1. If you have 100 mac, it will automatic add 1 or two to it.
       * The purpose of this script is i can add gex decimal by 1 or 2; used on sending Docsis Submission. 
       * OK_code: some test code when writting this scipt
