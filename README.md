@@ -180,7 +180,7 @@ Updated Time:
          * ping.py: ping ip address, if on display uo, lese display off
 ---
  * url_pars
-  * Description: export text file into excel.
+     * Description: export text file into excel.
        * The purpose of this script is to remove url string variable such as / or ?
        * input related script
          * url_new.py: Remove the last character / and ? character occur
@@ -191,8 +191,8 @@ Updated Time:
          
       * How to used with output.
     
-      * url_new.py
-        * Description on how to used: In the scipt declare url link, that will remove it. 
+ * url_new.py
+     * Description on how to used: In the scipt declare url link, that will remove it. 
          ```
          Why is the first one is not been remove. When you spit out the / it will look like this?
          >>> urlx = url1.split('/')
@@ -205,10 +205,10 @@ Updated Time:
         orginal:?22test22==>2test22
         orginal:33test22==>test33
          ```
-     * url_remove_string.py
-       * Description on how to used: remove character that occur ? , used [:-1][0], and output txt file
+ * url_remove_string.py
+     * Description on how to used: remove character that occur ? , used [:-1][0], and output txt file
        
-       * File:
+     * File:
          * orgginal.txt
         ```
        line=line.split('?')[:-1][0]
@@ -224,9 +224,9 @@ Updated Time:
                 f_out.write('{}\n'.format(line))
          ```
 
-     * url_remove_string2.py
-       * Description on how to used: remove character that occur ? , parsed._replace(query='').geturl()    
-       * File:
+ * url_remove_string2.py
+     * Description on how to used: remove character that occur ? , parsed._replace(query='').geturl()    
+     * File:
          * orgginal.txt
          ```
          from urllib.parse import urlparse
@@ -239,9 +239,9 @@ Updated Time:
                  print(newline)
          ```
          
-     * url_remove_string11.py
-       * Description on how to used: use this method line=line.split('?')[:-1][0] and print out
-       * File:
+ * url_remove_string11.py
+     * Description on how to used: use this method line=line.split('?')[:-1][0] and print out
+     * File:
          * orgginal.txt     
        ```
        with open('orgginal.txt') as t,open('out.txt', 'w') as f_out:
@@ -256,7 +256,7 @@ Updated Time:
 
 ---         
  * telnet
-  * Description: using telnet by obtain account and execute the command itself
+    * Description: using telnet by obtain account and execute the command itself
        * The purpose of this script is to telnet to server and do some action?
        * input related script
          * Telnet_Ex1_no_type_acc.py: Put your host, account and password in script
