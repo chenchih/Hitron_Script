@@ -14,8 +14,50 @@
 ```
 Give examples
 ```
+
 ## Folder /directory
 * Python(2/3): put based on python script 
+---
+  * file_rw:
+    * Description: 
+      * This script mainly focus on how to read and write file. The most basic concept of how to used it. 
+      * simple_read_write.py: read file, and export to text file
+      * average_file_data.py: average the text file data
+      * simple_read.py: read file, and print it out
+      
+```
+     Method 1: line.strip()
+    with open('test.txt') as f,open('out.txt', 'w') as f_out:
+        for line in f:
+            line = line.strip()
+            print(line)
+ ```
+ 
+```
+    Method 2: line,end’’
+    with open('test.txt') as f,open('out.txt', 'w') as f_out:
+        for line in f:
+            print(line,end='') 
+```
+ 
+
+   * How to used with output.
+        * simple_read.py
+          * File: 
+            * test.txt: contain text file
+          * Description on how to used: read the file from text and print it out.
+       * simple_read_write.py
+         * File: 
+           * test.txt: contain text file
+          * Description on how to used: Read the file, and export to new file. 
+       * average_file_data.py
+         * File: 
+           * Grade.txt: contain grade score
+         * Description on how to used: add and average the grade.txt file and print the result
+        
+  
+---
+
   * MAC_add_Submission:
     * Description: 
       * adding mac address last digit to 1. EX: XXXXXXXXX0=>xxxxxxxxx1. If you have 100 mac, it will automatic add 1 or two to it.
@@ -56,12 +98,32 @@ Give examples
         AC202ED1DAF0     AC202ED1DAF2
         
        ```
-
-  * inputcharacter
+  
+---
   * find_string
+    * Description: Find specific date from a file with the correct password. This is a "passwrod of date" file.
+       * The purpose of this script is to find specific date according to what you enter and filter it. Everyday have a unique password, if we need to find need to take a long time to search. So i used  a method to automatic help search related date's password. 
+      * POD_RDKB_10Year.txt:contain date with password
+      * find_string.py: find string inside script 
+      * RDKB_POD_py2.py : python 2 find string by input string
+      * RDKB_POD_py3.py: python 3 find string by input string
+      * test_read.py:find related string from script 
+      
+    * How to used with output.
+       * RDKB_POD_py2.py and RDKB_POD_py3.py
+          * Description on how to used: Just type in the date format 2018XXXX, and it will filter related password
+       * find_string.py
+          * Description on how to used: Find specific string inside script. 
+       * test_read.py
+          * Description on how to used: Put related date, text file, and export file. It wil filter according to its setting
+   
+  
+  
+---
   * dateutil
  
     * Description: Convert data time.
+      * The purpose of this script is to convert the data in specific format
       * holiday.txt:contain data 
       * date_replace.py:it will remove the / and changed to 20180102
       * strftime_dateonly.py:convert date only without word 
@@ -75,10 +137,44 @@ Give examples
           * Description on how to used: used Hoilday.txt and contain 2018/01/02, and remove / (only date).
        * strftime_date_string.py
           * Description on how to used: used Hoilday.txt (date contain with no /) will convert date with /, and word.     
-         
-     
+---         
+   * export_Excel
+     * Description: export text file into excel.
+       * The purpose of this script is to export text file to excel  
+       * 1.excel_export_allvalue.py:write file in text file and export text to csv. only export row 
+       * 2.exel_export_space_newRowColumn.py: read and write file from text to csv. using split different row 
+ 
+       
+     * How to used with output.
+       * 1.excel_export_allvalue.py
+         * Description on how to used:Export the text file into csv file 
+         * File: 
+           * mytxt.txt: contain text file
+           * mycsv.csv: export file to csv format
+           
+       * 2.exel_export_space_newRowColumn.py
+         * Description on how to used:read file and export to csv format , using split method
+         * File: 
+           * vocab2.txt: contain text file
+           * file1.csv: export file to csv format
+                          
+---
+ * window_command_import_os
+     * Description: export text file into excel.
+       * The purpose of this script is to used window related command such as ping, cmd, and etc
+       * input related script
+         * input.py: Enter Input string?
+         * input_withstring.py: execute python iwht string variable
+       * call_cmd.py:Call cmd out      
+       * mib:
+         * mib.py: snmp walk mib with many parmater together
+         * snmp_walk.py: snmp_walk command
+         * snmp_input.py: enter ip adress and walk mib
+       * other window command
+         * renam_file.py: rename file name
+         * telnet.py: Enter ip adress and do telnet to the host 
+         * ping.py: ping ip address, if on display uo, lese display off
 
-* CL: based on TCL script
 
 
 
