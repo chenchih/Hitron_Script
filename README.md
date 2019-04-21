@@ -2,17 +2,13 @@
 
 * This is a script that can do some automated work. There are many diffrent folder . 
 * This script are based on work, which related to file, and some networking stuff
+* This Scipt based on Python which I made automatic for Hitron related work, which can help me speed up my working process.
 
 ## Getting Started
-
-* This Scipt based on Python which I made automatic foro Hitron related work, which can help me speed up my working process.  Most of theme are related to file, ip, mib related setting
 
 ### Prerequisites
 - Please install python2 or 3.
 - Support Python2 :MAC_add_Submission, Telnet_using ini file 
-
-
-
 
 ```
 Updated Time:
