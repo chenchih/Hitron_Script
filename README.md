@@ -174,9 +174,91 @@ Give examples
          * renam_file.py: rename file name
          * telnet.py: Enter ip adress and do telnet to the host 
          * ping.py: ping ip address, if on display uo, lese display off
+---
+ * url_pars
+  * Description: export text file into excel.
+       * The purpose of this script is to remove url string variable such as / or ?
+       * input related script
+         * url_new.py: Remove the last character / and ? character occur
+         * url_remove_string.py: Remove character occur after ? 
+         * url_remove_string2.py:Remove character occur after ? 
+         * url_remove_string11.py:Remove character occur after ?
+         * url_test.py: Remove the last string using url.index?
+         
+      * How to used with output.
+    
+      * url_new.py
+        * Description on how to used: In the scipt declare url link, that will remove it. 
+         ```
+         Why is the first one is not been remove. When you spit out the / it will look like this?
+         >>> urlx = url1.split('/')
+         >>> urlx
+         ['https:', '', 'www.facebook.com', 'xxxxxx', 'test1q223', '']
+         As you can see the last word become “”, and cause it will not remove. 
+         So the first condition didn’t match, so it won't remove it. 
+   
+        [-1][2:]=>used last string, and shift 2 character.
+        orginal:?22test22==>2test22
+        orginal:33test22==>test33
+         ```
+     * url_remove_string.py
+       * Description on how to used: remove character that occur ? , used [:-1][0], and output txt file
+       
+       * File:
+         * orgginal.txt
+        ```
+       line=line.split('?')[:-1][0]
+       spilt ? and remove last string
+        ```
+        ```
+        with open('orgginal.txt') as f,open('out.txt', 'w') as f_out:
+            for line in f:
+                line = line.strip()
+                print(line)
+                line=line.split('?')[:-1][0]
+                #print(line)
+                f_out.write('{}\n'.format(line))
+         ```
 
+     * url_remove_string2.py
+       * Description on how to used: remove character that occur ? , parsed._replace(query='').geturl()    
+       * File:
+         * orgginal.txt
+         ```
+         from urllib.parse import urlparse
+         with open('orgginal.txt') as f,open('out.txt', 'w') as f_out:
+             for line in f:
+                 line = line.strip()
+                 parsed = urlparse(line)
+                 #print(line)
+                 newline=parsed._replace(query='').geturl()
+                 print(newline)
+         ```
+         
+     * url_remove_string11.py
+       * Description on how to used: use this method line=line.split('?')[:-1][0] and print out
+       * File:
+         * orgginal.txt     
+       ```
+       with open('orgginal.txt') as t,open('out.txt', 'w') as f_out:
+           print ("After :"+ " ")
+           for line in t:
+               line = line.strip()
+               #print(line)
+               line=line.split('?')[:-1][0]
+               print(line)
+               #f_out.write('{}\n'.format(line))    
+       ```
 
-
+---         
+ * telnet
+  * Description: using telnet by obtain account and execute the command itself
+       * The purpose of this script is to telnet to server and do some action?
+       * input related script
+         * Telnet_Ex1_no_type_acc.py: Put your host, account and password in script
+         * Telnet_Ex2_type_acc.py: User type in account, and pwd , and enter command (show running config)
+         * Telnet_Ex2_type_acc.py:Telnet with function
+         * Telnet_Ex2_type_acc.py:Put your password setting and username in inc
 
 ## Resource
 
