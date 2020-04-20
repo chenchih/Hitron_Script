@@ -5,25 +5,6 @@
 * One type of script is just telnet and get the IP address
 * Anohter Type of Script is before telnet will ping Server reachable or not
 ---
-
-# CMTS Command and Manual Test 
-- Manual Testing
-1. Login in Server using Telnet 192.168.1.252
-2. Access correct username and password
-2.Check your IP by typng correct MAC address as below
-
-- CMTS Setting
-
-  - IPv4=>scm XXXX.XXXX.XXXX.XXXX
-  ```
-   xxxx.xxxx.xxxx.xxxx 172.16.14.57    C0/0/4/UB     p-online          3363  -3.00  4052   1   Y
-   ```
-  - IPv6=>scm XXXX.XXXX.XXXX.XXXX ipv6
-   ```
-   xxxx.xxxx.xxxx.xxxx B/D  C0/0/4        w-online          Y  2001:0:A014:0:7D7C:52A:43B8:EEFF
-   ```
-   
----
 # Code Description
   - IPv4 regualr expression
   ```
@@ -45,6 +26,24 @@
        value = tn.read_until(b"Router#")
        value=value.decode('utf8')
        ```
+ ---
+# CMTS Command and Manual Test 
+- Manual Testing
+1. Login in Server using Telnet 192.168.1.252
+2. Access correct username and password
+2.Check your IP by typng correct MAC address as below
+
+- CMTS Setting
+
+  - IPv4=>scm XXXX.XXXX.XXXX.XXXX
+  ```
+   xxxx.xxxx.xxxx.xxxx 172.16.14.57    C0/0/4/UB     p-online          3363  -3.00  4052   1   Y
+   ```
+  - IPv6=>scm XXXX.XXXX.XXXX.XXXX ipv6
+   ```
+   xxxx.xxxx.xxxx.xxxx B/D  C0/0/4        w-online          Y  2001:0:A014:0:7D7C:52A:43B8:EEFF
+   ```
+   
 ---
 # File Descriptiion
 -telnet_cbr8_ipv4.py (support Python3)
@@ -65,4 +64,4 @@
 
 # Summary
 
--This is a good script to telnet to server and get some information
+-This is a good script to telnet to server and get some information (updated: 2020040)
