@@ -46,20 +46,21 @@
    
 ---
 # File Descriptiion
--telnet_cbr8_ipv4.py (support Python3)
- * Description: Will only Telnet and print V4 IP of specific MAC Address
--telnet_cbr8_ipv6.py(support Python3)
- * Description: Will only Telnet and print V6 IP of specific MAC Address
+ - telnet_cbr8_ipv4.py (support Python3)
+   * Description: Will only Telnet and print V4 IP of specific MAC Address
+ - telnet_cbr8_ipv6.py(support Python3)
+   * Description: Will only Telnet and print V6 IP of specific MAC Address
  
- -telnet_CMTS_IPv4_python2.py (support Python2)
-  * Description: First check CMTS IP by ping if pass then telnet and print V4 IP of specific MAC Address
- -telnet_CMTS_IPv4_python3.py(support Python3)
-  * Description: First check CMTS IP by ping if pass then telnet and print V4 IP of specific MAC Address
+ 
+ - telnet_CMTS_IPv4_python2.py (support Python2)
+   * Description: First check CMTS IP by ping if pass then telnet and print V4 IP of specific MAC Address
+ - telnet_CMTS_IPv4_python3.py(support Python3)
+   * Description: First check CMTS IP by ping if pass then telnet and print V4 IP of specific MAC Address
   
--telnet_CMTS_IPv6_python2.py (support Python2)
-  * Description: First check CMTS IP by ping if pass then telnet and print V6 IP of specific MAC Address
--telnet_CMTS_IPv6_python3.py(support Python3)
-  * Description: First check CMTS IP by ping if pass then telnet and printV6 IP of specific MAC Address 
+ - telnet_CMTS_IPv6_python2.py (support Python2)
+   * Description: First check CMTS IP by ping if pass then telnet and print V6 IP of specific MAC Address
+ - telnet_CMTS_IPv6_python3.py(support Python3)
+   * Description: First check CMTS IP by ping if pass then telnet and printV6 IP of specific MAC Address 
 ---
 
 # Summary
