@@ -20,18 +20,18 @@ def TFC_MAC(MAC):
     TFC_B=convert_strlist
 
     MAC_TFC= "#",TFC_F,"@",TFC_B,"*"
-    #str =  ''.join(tup) 
-    #MAC= ''.join(MAC_TFC) 
-    TFC_MAC_ADDR = convertTuple(MAC_TFC) 
+    #str =  ''.join(tup)
+    #MAC= ''.join(MAC_TFC)
+    TFC_MAC_ADDR = convertTuple(MAC_TFC)
     return TFC_MAC_ADDR
 def CGNV5_UNE(MAC):
     MAC=split_convert(MAC)
     MAC_format = MAC[-6:]
     password = "CPE#"+MAC_format
-    return password 
+    return password
 
-def convertTuple(tup): 
-    str =  ''.join(tup) 
+def convertTuple(tup):
+    str =  ''.join(tup)
     return str
 
 def split_convert(MAC):
@@ -40,21 +40,21 @@ def split_convert(MAC):
     return str.join(MAC_ADD)
 
 mac_Add= input("please enter your mac address: ").upper()
-while True:   
+while True:
     try:
         print("please enter this item to get password: \n \
         1. CGNV5(TFC) \n \
         2. CGNV5(UNE) \n \
         Exit press any key to exit")
-        
-        
+
+
         CM = eval(input("Choice: "))
         print ("=" *35 )
-        if CM == 1:     
+        if CM == 1:
             print ("MAC Address:    ", split_convert(mac_Add))
             print ("TFC MAC Address:", TFC_MAC(mac_Add))
             print ("=" *35 )
-        elif CM == 2:     
+        elif CM == 2:
             print ("MAC Address:    ", split_convert(mac_Add))
             print ("UNE MAC Address:", CGNV5_UNE(mac_Add))
             print ("=" *35 )
@@ -65,11 +65,16 @@ while True:
             print("Exit")
             os.system("pause")
             break
+
+    except KeyboardInterrupt:
+        print("Exit")
+        os.system("pause")
+        break
     except:
-     print("Exit")
-     os.system("pause")
-     break
-    
+        print("Exit")
+        os.system("pause")
+        break
+
     os.system("pause")
     os.system('cls')
 
