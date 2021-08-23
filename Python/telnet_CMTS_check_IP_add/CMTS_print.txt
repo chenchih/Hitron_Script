@@ -1,0 +1,4 @@
+IPV4:
+f81d.0fb8.8ee0 172.16.14.57    C0/0/4/UB     p-online          3363  -3.00  4052   1   Y
+IPV6:
+9050.ca8b.5e20 B/D  C0/0/4        w-online          Y  2001:0:A014:0:7D7C:52A:43B8:EEFF
