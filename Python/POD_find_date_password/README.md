@@ -1,25 +1,35 @@
-# searching_string
-
+# About the Script
+* The purpose of this test is to find certain string in a text file. 
+* POD means password of day, which is everyday have a unique password
+* So inorder to get specfic password, just have to enter the correct date format
 * This is a script that will find string inside a text file . 
-# Purpose of this script
-* If you wants to find some parmater/string in a file, you can used it, especially with password. 
-* The text file contain date with password
-## Getting Started
 
-* This Scipt based on python2 and 3. 
+# Decription of the python file
+* POD.py => get eh specfic password
+* find_string_export_file.py ==> will find specfic password and export out into a file 
+
+# Procedure 
+Prerequisite: Please provide your own pod text file
+```sh
+1. Put your text file in the directory
+2. run the script
+3. script will ask you to enter your text file and date you wants to find
+```
 
 ## How to work with the script:
-1) Execute the script <br/>
-2) Script will let you enter which string to find<br/>
-3) Please refer below output
-
+1) POD.py
 ```
+#POD.py
 enter your string (Ex:20180810): 20180810
+enter your POD file name (xxx.txt): POD_RDKB_10Year.txt
 20180810        eui7pieralWHvt9p
 ```
-## File description
-* Text_search_py2.py=>this script help search string in a file (support python2) 
-* Text_search_py3.py=>this script help search string in a file (support python3) 
-* specific_date_find.py=>Enter the string you wants to find in the script. (python2 &python3)
-* find_method.py=>same as above, this is a sample format. File from internet for reference
-* POD_RDKB_10Year.txt: contain list of password, that script will find
+![title](img/pod.png)
+
+2 find_string_export_file.py
+```
+#find_string_export_file.py
+enter your string (Ex:20180810): 20180810
+enter your POD file name (xxx.txt): POD_RDKB_10Year.txt
+```
+![title](img/find_string_export_file.png)
