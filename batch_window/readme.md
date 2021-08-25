@@ -23,7 +23,8 @@ Some of the scipt can we use for other purpose or see how to set sytnax.
 |SNMP_stop_N_cycle.bat|Query mib and stop after 100 cycle|SNMP|
 |set_ipaddress.bat|set static or dhcp ip address|Window System|
 |NMAP_SCAN.bat| Scan port|Tool|
-
+|PWD_Autogen_cgnv22_21.bat|password|
+|Wlan_connect.bat|Wireless|
 # How to use: 
 ```
 1. Open a text or notepad
@@ -218,3 +219,24 @@ call cmd
     ==============================
     Please enter choice:
     ```
+## 14. password Autogen
+* Automatic generate Password using MAC address format 
+* Output
+    ```
+	Enter MAC: AABBCCDDEEFF
+	Password: #BBAADD@CCFFEE*
+	 ```
+
+## 15.Wlan connection
+### How to used it:
+> put your ssid in name= xxxx (netsh wlan connect name=WIFI-IOT)
+* Code
+ ```
+	:START
+	netsh wlan disconnect
+	sleep 15s
+	netsh wlan connect name=WIFI-IOT
+	sleep 15s
+	ping 8.8.8.8 -n 20 -l 520
+	GOTO START
+	 ```
