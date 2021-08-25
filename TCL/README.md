@@ -1,9 +1,8 @@
 # Intro
-This is a script used in tcl which you don't have to used netsnmp to fund the oid, i already apply it in my script. 
-You just have toenter your DUT IP address and it will just used snmp get the value. 
-i believe it will be more increase the productivity and speed up your time. 
-You don;t have to memories your OID, open mib browser, or find how to used the snmp command. 
-
+*	This is a script used in tcl, which you do not have to used open snmp browser, ot find the oid, I already apply it in my script. 
+*	You just have to enter your DUT IP address and it will just get the value using snmp get or set. 
+*	I believe it will be more efficiently and productivity; speed up your time. 
+*	You don’t have to memories or find which OID. You don’t even have to open mib browser, or find command on how to used it.
 
 # Installation
 Install TCL ActiveTcl8.4.X version, else unable to run
@@ -50,4 +49,4 @@ copy tcl-snmptools-1.0 to  tcl\bin
 
 # conclusion
 Any question if let me know, thanks. 
-I have been using this script for most of my time. There might be some problem or bug on it, but overall i think it can help most of the task. 
+I have been using this script for most of my time. There might be some problem or bug on it, but overall I think it can be helpful of most of the task
