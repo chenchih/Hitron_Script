@@ -1,13 +1,23 @@
+# Intro
+This batch script is most common use in Window, some of them include running cycle, and some just SNMP.
+Some of the scipt can we use for other purpose or see how to set sytnax. 
+# File Description
+| Code         | Description |
+| ------        | ------ |
+|current_directory.bat| will open your current directory without open cmd|
+|mib set webgui_password_daemon.bat:| set webgui password, and DaemonAccessible|
+|upgrade_http.bat:| upgrade fw (http, tftp)and walk  mib |
+|upgrade_fast2_samedomain.bat  |Type in your last IP address|
+|SIP_Convert_bin_test.bat : |convert docsic config file to text file |
+|iperf_wifi_toolV2.bat:| wifi set password, and iperf command   |
+|SNMP_walk_MIB_loop_textfile.bat| Query MIB every N second and epxort to text file|
+|SNMP_walk_allMIB_loop_textfile.bat| Query entrire MIB every N second and epxort to text file|
+|SNMP_loop_methodd2.bat| walk mib method2|
+|set_ipaddress.bat|set static or dhcp ip address|
+|NMAP_SCAN.bat| Scan port|
+
+
 # How to use: 
-## How to use the script
-```
-1. Open a text or notepad
-2. copy and paste it or download the file
-3. save as .bat file
-4. double click is able to run it
-```
-# How to use: 
-## How to use the script
 ```
 1. Open a text or notepad
 2. copy and paste it or download the file
@@ -25,7 +35,7 @@ call cmd
 ##  2. mib set webgui_password_daemon
 > Please install netsnmp before using it
 
-* Output
+### Output
     ```
     SNMPv2-SMI::enterprises.8595.20.16.1.1.1.1.4.1 = STRING: "1234567890"
     SNMPv2-SMI::enterprises.8595.20.16.1.1.1.1.4.1 = STRING: "1234567890"
@@ -42,7 +52,7 @@ call cmd
     * Choose your item, tftp upgrade, http upgrade, read upgrade setting from mib
     * This is recusrive loop, so you want to change IP you are able to change at new ip
 * Note: TFTP server and FW is been hotcode, you have to modify it
-* OUTPUT:
+### OUTPUT:
     ```
     Enter your IP address : 
     ==============================
@@ -64,7 +74,7 @@ call cmd
 ```
 >Note: If you want to convert txt to cfg please type correct txt file, if you want to convert cfg to txt please type correct cfg
 
-* Output
+### Output
     ```
     ==============================
     1)transfer bin to text
@@ -79,7 +89,7 @@ call cmd
 * Please setup Iperf server 
 * Set WIFI: set your 2.4G and 5G password
 * RUN Iperf Client : run wifi clinet
-* Output:
+### Output:
     ```
     ==============================
     1)SET WIFI
@@ -89,7 +99,7 @@ call cmd
     Please enter choice:
     ```
 ## 6.SNMP_walk_MIB_loop_textfile.bat
-* Output
+### Output
     ```
     Enter your IP address :  172.16.14.56
     SNMPv2-SMI::mib-2.33.1.2.4.0 = INTEGER: 0
@@ -97,7 +107,7 @@ call cmd
     等候  28 秒後，請按任何一個鍵繼續 ...
     ```
 ## 7.SNMP_walk_allMIB_loop_textfile.bat
-* Output
+### Output
     ```
     Date: 20210825
     Enter your IP address :  172.16.14.98
@@ -105,7 +115,7 @@ call cmd
     ```
 
 ## 8.SNMP_loop_methodd2.bat
-* Output
+### Output
     ```
     Enter your IP address :  172.16.14.98
     Time:  10:39:48.34 count: 1
@@ -113,8 +123,8 @@ call cmd
 
 ## 9.set_ipaddress.bat
 * This is for setting static or dhcp Ip without going to network setting
-* output
-       ```
+### output
+   ```
     ==============================
     1)DHCP
     2)static (100 dmain)
@@ -131,17 +141,17 @@ call cmd
      ```
 ## 10.NMAP_SCAN.bat
 ### How to do it: 
-* please install nmap tool 
+* please <strong> install nmap tool </strong>
 * please enter your IP in script, it's hotcode
-    >set cm_ip="172.16.13.17"
-    >set cm_ipv6="2001:0:a013:0:cd79:a999:23e7:20fa"
-    >set mta_ip ="192.168.41.66"
-    >set mta_ipv6="2001:0:a013:0:5472:3739:c244:6987"
+    >set cm_ip="172.16.13.17" <br>
+    >set cm_ipv6="2001:0:a013:0:cd79:a999:23e7:20fa" <br>
+    >set mta_ip ="192.168.41.66" <br>
+    >set mta_ipv6="2001:0:a013:0:5472:3739:c244:6987" <br>
 * Nmap command
-    >TCP: nmap -Pn -sS -sV --version-all -p 0-65535 -oN export_filename IP address
-    >UDP: nmap -Pn -sS -sU --version-all -p 0-65535 -oN export_filename IP address
-    >ddos: nmap -Pn -n -sU -A -p U:0,19,53,123,161,1900 --script=dns-recursion, >ntpmonlist, snmp-sysdescr, upnp-info -oN filename.txt
-* Output
+    >TCP: nmap -Pn -sS -sV --version-all -p 0-65535 -oN export_filename IP address <br>
+    >UDP: nmap -Pn -sS -sU --version-all -p 0-65535 -oN export_filename IP address <br>
+    >ddos: nmap -Pn -n -sU -A -p U:0,19,53,123,161,1900 --script=dns-recursion, >ntpmonlist, snmp-sysdescr, upnp-info -oN filename.txt <br>
+### Output
     ```
     ==============================
     1)Scan TCP
