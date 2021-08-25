@@ -1,21 +1,28 @@
 # Intro
 This batch script is most common use in Window, some of them include running cycle, and some just SNMP.
 Some of the scipt can we use for other purpose or see how to set sytnax. 
-# File Description
-| Code         | Description |
-| ------        | ------ |
-|current_directory.bat| will open your current directory without open cmd|
-|mib set webgui_password_daemon.bat:| set webgui password, and DaemonAccessible|
-|upgrade_http.bat:| upgrade fw (http, tftp)and walk  mib |
-|upgrade_fast2_samedomain.bat  |Type in your last IP address|
-|SIP_Convert_bin_test.bat : |convert docsic config file to text file |
-|iperf_wifi_toolV2.bat:| wifi set password, and iperf command   |
-|SNMP_walk_MIB_loop_textfile.bat| Query MIB every N second and epxort to text file|
-|SNMP_walk_allMIB_loop_textfile.bat| Query entrire MIB every N second and epxort to text file|
-|SNMP_loop_methodd2.bat| walk mib method2|
-|set_ipaddress.bat|set static or dhcp ip address|
-|NMAP_SCAN.bat| Scan port|
+# Prerequisite
+## Some tool need to used specail tool please installed: 
+* Nmap https://nmap.org/download.html
+* Iperf2 https://iperf.fr/
+* NetSNMP: http://www.net-snmp.org/download.html
 
+# File Description
+| Code         | Description |Type |
+| ------        | ------ |  ------ |
+|current_directory.bat| will open your current directory without open cmd|Window System|
+|mib set webgui_password_daemon.bat:| set webgui password, and DaemonAccessible|SNMP|
+|upgrade_http.bat:| upgrade fw (http, tftp)and walk  mib |SNMP|
+|upgrade_fast2_samedomain.bat  |Type in your last IP address|SNMP|
+|iperf_wifi_toolV2.bat:| wifi set password, and iperf command   |Tool|
+|SIP_Convert_bin_test.bat : |convert docsic config file to text file |SNMP|
+|SNMP_walk_MIB_loop_textfile.bat| Query MIB every N second and epxort to text file|SNMP|
+|SNMP_walk_allMIB_loop_textfile.bat| Query entrire MIB every N second and epxort to text file|SNMP|
+|SNMP_loop_methodd2.bat| walk mib method2|SNMP|
+|SNMP_query_mib_N_time.bat|user enter Query MIB N time |SNMP|
+|SNMP_stop_N_cycle.bat|Query mib and stop after 100 cycle|SNMP|
+|set_ipaddress.bat|set static or dhcp ip address|Window System|
+|NMAP_SCAN.bat| Scan port|Tool|
 
 # How to use: 
 ```
@@ -25,7 +32,7 @@ Some of the scipt can we use for other purpose or see how to set sytnax.
 4. double click is able to run it
 ```
 # Script 
-##  1. current_directory:
+## 1. current_directory:
 * this is good when you don't want to type command to your current directory
 ```
 @echo off
@@ -35,8 +42,8 @@ call cmd
 ##  2. mib set webgui_password_daemon
 > Please install netsnmp before using it
 
-### Output
-    ```
+* Output 
+     ```
     SNMPv2-SMI::enterprises.8595.20.16.1.1.1.1.4.1 = STRING: "1234567890"
     SNMPv2-SMI::enterprises.8595.20.16.1.1.1.1.4.1 = STRING: "1234567890"
     SNMPv2-SMI::enterprises.8595.20.16.2.1.0 = INTEGER: 1
@@ -50,9 +57,9 @@ call cmd
     * Execute Script
     * Enter your DUT IP address 
     * Choose your item, tftp upgrade, http upgrade, read upgrade setting from mib
-    * This is recusrive loop, so you want to change IP you are able to change at new ip
-* Note: TFTP server and FW is been hotcode, you have to modify it
-### OUTPUT:
+    * This is recursive loop, so you want to change IP you are able to change at new ip
+> Note: TFTP server and FW is been hotcode, you have to modify it
+* OUTPUT:
     ```
     Enter your IP address : 
     ==============================
@@ -63,7 +70,40 @@ call cmd
     ==============================
     Please eneter choice: 
     ```
-## 4.SIP_Convert_bin_test.bat 
+	
+## 4.upgrade_fast2_samedomain.bat
+* STEP
+    * Execute Script
+    * Enter your Last DUT domain, 172.16.40.X , just enter x
+    * Choose your item, tftp upgrade, http upgrade, read upgrade setting from mib
+    * This is recursive loop, so you want to change IP you are able to change at new ip
+* Note: TFTP server and FW is been hotcode, you have to modify it
+* OUTPUT:
+    ```
+    Enter your IP address : 
+    ==============================
+    0)Upgrade image(http)
+    1)Upgrade image(tftp)
+    2)walk mib
+    3)new ip
+    ==============================
+    Please eneter choice: 
+    ```
+## 5.iperf_wifi_toolV2.bat
+* Please setup Iperf server 
+* Set WIFI: set your 2.4G and 5G password
+* RUN Iperf Client : run wifi clinet
+* Output:
+    ```
+    ==============================
+    1)SET WIFI
+    2)Iperf Client
+    3)exit
+    ==============================
+    Please enter choice:
+    ```	
+	
+## 6.SIP_Convert_bin_test.bat 
 > Please install docsis DOCSIS Configurator
 ### How to used it:
 ```
@@ -74,7 +114,7 @@ call cmd
 ```
 >Note: If you want to convert txt to cfg please type correct txt file, if you want to convert cfg to txt please type correct cfg
 
-### Output
+* Output
     ```
     ==============================
     1)transfer bin to text
@@ -85,45 +125,62 @@ call cmd
     ==============================
     Please eneter choice:
     ```
-## 5.iperf_wifi_toolV2.bat
-* Please setup Iperf server 
-* Set WIFI: set your 2.4G and 5G password
-* RUN Iperf Client : run wifi clinet
-### Output:
-    ```
-    ==============================
-    1)SET WIFI
-    2)Iperf Client
-    3)exit
-    ==============================
-    Please enter choice:
-    ```
-## 6.SNMP_walk_MIB_loop_textfile.bat
-### Output
+## 7.SNMP_walk_MIB_loop_textfile.bat
+* Output
     ```
     Enter your IP address :  172.16.14.56
     SNMPv2-SMI::mib-2.33.1.2.4.0 = INTEGER: 0
     ##############n=1##############
     等候  28 秒後，請按任何一個鍵繼續 ...
     ```
-## 7.SNMP_walk_allMIB_loop_textfile.bat
-### Output
+## 8.SNMP_walk_allMIB_loop_textfile.bat
+* Output
     ```
     Date: 20210825
     Enter your IP address :  172.16.14.98
     SNMPv2-MIB::sysDescr.0 = STRING: DOCSIS 3.0 Cable Modem Rou
     ```
 
-## 8.SNMP_loop_methodd2.bat
-### Output
+## 9.SNMP_loop_methodd2.bat
+* Output
     ```
     Enter your IP address :  172.16.14.98
     Time:  10:39:48.34 count: 1
     ```
 
-## 9.set_ipaddress.bat
+
+## 10. User enter Query MIB N time 
+* User enter IP address and query N times
+* output
+   ```
+   Enter cm ip address of a cable modem You want to query:
+	ip:172.16.14.56
+	Enter number of queries (1 query = 1 second):
+	queries:4
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+   ```
+   
+## 11. Query mib and stop after 100 cycle|
+* Query Mib and stop after running 100 cycle 
+* output
+   ```
+	Test Round 1
+	2021/08/25 週三 下午 16:45:52.63
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+	Test Round 2
+	2021/08/25 週三 下午 16:45:53.06
+	SNMPv2-SMI::mib-2.69.1.3.5.0 = STRING: "7.2.4.3G2-PC20-CTR-Legacy"
+	Test Round 3
+	2021/08/25 週三 下午 16:45:53.46
+   ```
+
+## 12.set_ipaddress.bat
 * This is for setting static or dhcp Ip without going to network setting
-### output
+* output
    ```
     ==============================
     1)DHCP
@@ -139,7 +196,7 @@ call cmd
     ==============================
     Please eneter choice:
      ```
-## 10.NMAP_SCAN.bat
+## 13.NMAP_SCAN.bat
 ### How to do it: 
 * please <strong> install nmap tool </strong>
 * please enter your IP in script, it's hotcode
@@ -151,7 +208,7 @@ call cmd
     >TCP: nmap -Pn -sS -sV --version-all -p 0-65535 -oN export_filename IP address <br>
     >UDP: nmap -Pn -sS -sU --version-all -p 0-65535 -oN export_filename IP address <br>
     >ddos: nmap -Pn -n -sU -A -p U:0,19,53,123,161,1900 --script=dns-recursion, >ntpmonlist, snmp-sysdescr, upnp-info -oN filename.txt <br>
-### Output
+* Output
     ```
     ==============================
     1)Scan TCP
