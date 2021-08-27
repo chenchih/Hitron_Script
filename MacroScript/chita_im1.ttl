@@ -1,0 +1,7 @@
+pause 5
+sendln"cli "
+pause 2
+sendln"doc "
+pause 2
+sendln"dload 192.168.100.12 CHITA-Submission-TRANS-18092513.uimg 1"
+closett

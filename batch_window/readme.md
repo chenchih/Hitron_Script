@@ -13,8 +13,8 @@ Some of the scipt can we use for other purpose or see how to set sytnax.
 |0|PWD_Autogen_cgnv22_21.bat|password|NA|
 |1-1|current_directory.bat| will open your current directory without open cmd|Window System/IP|
 |1-2|set_ipaddress.bat|set static or dhcp ip address|Window System|
-|1-3|Wlan_connect.bat|Window System/WiFI|
-|1-4|pinglistip.bat|Window System/ping|
+|1-3|Wlan_connect.bat|connect WLAN |Window System/WiFI|
+|1-4|pinglistip.bat|ping from list|Window System/ping|
 |2-1|iperf_wifi_toolV2.bat:| wifi set password, and iperf command   |Tool/iperf|
 |2-2|SIP_Convert_bin_test.bat : |convert docsic config file to text file |Tool/Excentis|
 |2-3|NMAP_SCAN.bat|port scan UDP TCP|Tool/Nmap|

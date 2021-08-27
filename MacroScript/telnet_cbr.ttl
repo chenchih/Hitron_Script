@@ -1,0 +1,18 @@
+timeout = 10
+connect '192.168.1.252:23 /nossh /T=1'
+
+;Wait a prompt message to login
+wait 'Username:'
+; Send username
+sendln 'guest'
+
+;Wait for a keyword to enter password
+wait 'Password:'
+; Send password
+sendln 'guest'
+
+; OK I am login
+
+; Wait for timeout
+; waitevent 1
+

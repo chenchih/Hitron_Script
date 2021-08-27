@@ -1,0 +1,2 @@
+sendln"ifconfig "
+pause 2
