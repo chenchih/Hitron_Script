@@ -3,8 +3,6 @@ set IP=172.16.14.98
 
 ::set WEBGUI account password (hitronUmAuthLocalAccountPassword) 
 snmpset  -v1 -c private %IP% .1.3.6.1.4.1.8595.20.16.1.1.1.1.4.1 s 1234567890
-::SNMPv2 (hitronUmAuthLocalAccountPassword) 
-snmpset  -v 2c -c  private %IP%  .1.3.6.1.4.1.8595.20.16.1.1.1.1.4.1 s 1234567890
 :: set commit(hitronUmCommitAll)
 snmpset  -v1 -c private %IP% .1.3.6.1.4.1.8595.20.16.2.1.0 i 1
 
