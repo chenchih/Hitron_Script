@@ -14,12 +14,12 @@ for i in range (2):
 
 
 	# reset modem by snmp 
-    count = 0
+    #count = 0
     strCount = str(count)
     time.sleep( 1 )
     if response == 0:
    
-        count = count + 1
+        
         strCount = str(count)
 
         print ("###result:PASS###",count)
@@ -29,6 +29,7 @@ for i in range (2):
         fd.write("###result:PASS###")
         fd.write(strCount)
         fd.close()
+        count = count + 1
     else:
         print ("result:FAIL")
 
@@ -37,7 +38,7 @@ for i in range (2):
         fd.write(strCount)
         fd.close()
      
-    break
+        break
 
 
 print ("#################end################")

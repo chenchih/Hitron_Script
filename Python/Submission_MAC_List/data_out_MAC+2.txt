@@ -1,4 +1,4 @@
-MAC             MTA_MACe 
+MAC             Eth_MAC 
 ===========     =========== 
 9A0C7CCDD600     9A0C7CCDD602
 9A0C7CCD3B90     9A0C7CCD3B92

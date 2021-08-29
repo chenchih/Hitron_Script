@@ -1,5 +1,5 @@
 import os
-hostname = "192.168.1.50" #example
+hostname = "8.8.8.8" #example
 response = os.system("ping -n 5 " + hostname)
 
 #and then check the response...

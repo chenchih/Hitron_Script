@@ -79,8 +79,8 @@ username = "guest"
 password = "guest"
 #mac = "749b.e80c.eb04"
 mac = input("please enet your mac (xxxx.xxxx.xxxx): ")
-new_IPv4 = telnet_To_CMTS(ip, username, password, mac)
-print("Your IPv4 address is: " , new_IPv4)
+new_IP = telnet_To_CMTS(ip, username, password, mac)
+print("Your IPv4 address is: " , new_IP)
 
 ##########################
 #import test111 as macadd

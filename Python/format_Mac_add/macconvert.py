@@ -13,7 +13,7 @@ if(mac_list[2]==":"):
     print("Remove :"+ h)
 
 elif (mac_list[2].isdigit()):
-    print("a digit")
+   
     ':'.join(h[i:i+2] for i in range(0,12,2))
     print ('MAC format:'+':'.join(h[i:i+2] for i in range(0,12,2)))
     

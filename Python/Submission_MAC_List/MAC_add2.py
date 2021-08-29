@@ -1,5 +1,5 @@
 with open('data.txt') as f,open('data_out_MAC+2.txt', 'w') as f_out:
-    f_out.write(('MAC \t MTA_MACe \n').expandtabs(15))
+    f_out.write(('MAC \t Eth_MAC \n').expandtabs(15))
     f_out.write(('=========== \t =========== \n').expandtabs(15))
     #print ('old file \t new file \n')
     for line in f:

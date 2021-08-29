@@ -1,12 +1,12 @@
 # About the Script
 * The purpose of this test is to find certain string in a text file. 
 * POD means password of day, which is everyday have a unique password
-* So inorder to get specfic password, just have to enter the correct date format
+* So in order to get specific password, just have to enter the correct date format
 * This is a script that will find string inside a text file . 
 
-# Decription of the python file
-* POD.py => get eh specfic password
-* find_string_export_file.py ==> will find specfic password and export out into a file 
+# Description of the python file
+* POD.py => get  specific password, enter date will get your password
+* find_string_export_file.py ==> will find specific password and export out into a file 
 
 # Procedure 
 Prerequisite: Please provide your own pod text file
@@ -17,7 +17,7 @@ Prerequisite: Please provide your own pod text file
 ```
 
 ## How to work with the script:
-1) POD.py
+1) **POD.py**
 ```
 #POD.py
 enter your string (Ex:20180810): 20180810
@@ -26,10 +26,12 @@ enter your POD file name (xxx.txt): POD_RDKB_10Year.txt
 ```
 ![title](img/pod.png)
 
-2 find_string_export_file.py
+**2 find_string_export_file.py**
+
 ```
 #find_string_export_file.py
 enter your string (Ex:20180810): 20180810
 enter your POD file name (xxx.txt): POD_RDKB_10Year.txt
 ```
 ![title](img/find_string_export_file.png)
+
