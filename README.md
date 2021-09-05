@@ -1,7 +1,8 @@
 # About 
 
 * This is all automation script I created at Hitron which is base on network, SNMP, stability, and etc
-
+*　Updated 20211/08/31, which is my last day at Hitron. 
+*　Some item need CMTS and Cable to be oline.  
 
 # Description
 
@@ -22,7 +23,10 @@
 * Macro Script
 * Linux Bash
 
+# Conclusion
 
-
+* All the script are self learn by myself, so some script might not be good enough.
+* The scipt is to be more productive. 
+* Thank, chenchih 20210905 updated
 
 
