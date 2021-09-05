@@ -1,7 +1,7 @@
 # About 
 
 * This is all automation script I created at Hitron which is base on network, SNMP, stability, and etc
-* Updated 20211/08/31, which is my last day at Hitron. 
+* Updated 2021/08/31, which is my last day at Hitron. 
 * Some items need CMTS or Cable to be oline.  
 
 # Description
